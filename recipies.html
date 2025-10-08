@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.header{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 120px;
+    gap: 400px;
+    margin-top: 20px;
+}
+.header>a, h2{
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    height: 450px;
+    width: 300;
+}
+.child {
+    height: 700px;
+    width: 290px;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+}
+
+.buttons{
+    text-align: center;
+}
+.buttons>button{
+    color:black;
+    background-color:white ;
+    padding: 12px;
+    border: none;
+    font-size: 15px;
+    cursor:white ;
+    width:40px;
+}
+.buttons>button:hover{
+    background-color: black;
+    color: white;
+}
+    
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+}
+.footer p{
+    /* display: inline-block;
+    box-sizing: border-box; */
+    height: 50px;
+    margin: 2px;
+    text-align: left;
+}
+.footer>.f1{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 500px;
+    width: 400px;
+    /* margin-left: 100px;     */
+    text-align: left;    
+
+}
+.footer>.f2{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 500px;
+    width: 400px;
+    /* margin-left: 200px; */
+
+}
+.mini{
+    width: 50px;
+    height: 50px;
+}
+.parent1 p{
+    font-family: arial;
+    font-size: 20px;
+}
+p{
+    text-align: center;
+}
+.footer>.f3{
+    display: inline-block;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+   width: 400px;
+   height: 500px;
+   /* flex-wrap: wrap; */
+
+}
+.f3>.tags1{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: 1px;
+}
+.f3>.tags{
+    background-color:  gray;
+    color: white;
+    padding: 3px;
+    margin: 1px;
+    font-size: 13px;
+}</style>
+</head>
+<body>
+    <div class="header">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></a>
+    <center><h1>MY FOOD</h1></center>
+    <h2>Mail</h2>
+    </div>
+        <!-- <center><h1>MY FOOD</h1></center> -->
+    <div class="parent">
+        <div class="child">
+        <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="100">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2><br>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+        <div class="child">
+        <img src="https://www.w3schools.com/w3images/steak.jpg" alt="100">
+        <h2>Let Me Tell You About This Steak</h2><br>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <h2>Cherries, interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+                What else?</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div></div>
+        <div class="parent">
+        <div class="child">
+        <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="100">
+            <h2>All I Need Is a Popsicle</h2><br>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+        <div class="child">
+        <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="100">
+        <h2>Salmon For Your Skin</h2><br>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h2>The Perfect Sandwich, A Real Classic</h2><br>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+            <h2>Le French</h2><br>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div></div>
+        <div>
+            <div class ="buttons"><button><<<</button><button>1</button><button>2</button><button>3</button><button>4</button><button>>>></button></div><br><br>
+        </div>
+        <hr>
+        <div>
+            <center><h1>About Me, The Food Man</h1>
+            <img src="https://www.w3schools.com/w3images/chef.jpg" alt="100"><br>
+            <h2><b>I am Who I Am!</b></h2>
+            <p>With Passion For Real, Good Food</p>
+            <p>Just me, myself and I, exploring the universe of unknownment. 
+                I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.
+                 I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. 
+                 Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                  Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </center>
+        </div><hr>
+        <div class="footer">
+            <div class="f1">
+                <h2>FOOTER</h2>
+                <p>Praesent tincidunt sed tellus rutrum.
+                Sed vitae justo condimentum, porta lectus vitae,
+                ultricies congue gravida diam non fringilla. <br>
+                Powered by w3.css</p></div>
+                
+
+                <div class="f2">
+                <h2>BLOG POSTS</h2><br>
+                <div class="inftr" style="display: inline-block;">
+                <img class="mini" src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                <div style="display: inline-block;"><h3>Lorem</h3>
+                <p>sed mattis nunc</p></div></div>
+                <hr><br>
+
+                <div style="display: inline-block;">
+                <img class="mini"  src="https://www.w3schools.com/w3images/gondol.jpg" alt="">
+                <div style="display: inline-block;"><h3>Ipsum</h3>
+                <p>Praes tinci sed</p></div>
+                </div></div>
+        
+                <div class="f3">
+                        <h2>POPULAR TAGS</h2><br>
+                        <span class="tags1">Travel</span>
+                        <span class="tags">New York</span>
+                        <span class="tags">Dinner</span>
+                        <span class="tags">Salmon</span> 
+                        <span class="tags">France</span>
+                        <span class="tags">Drinks</span>
+                        <span class="tags">Ideas</span>
+                        <span class="tags">Flavors</span> <br><br>
+                        <span class="tags">Cuisine</span>
+                        <span class="tags">Chicken</span>
+                        <span class="tags">Dressing</span>
+                        <span class="tags">Fried</span>
+                        <span class="tags">Fish</span>
+                        <span class="tags">Duck</span>
+                </div>
+                
+        </div>
+</body>
+</html>
