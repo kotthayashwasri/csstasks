@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+
+            display: inline-block;
+        }
+        .dropdown{
+            display: none;
+        }
+        .child:hover .dropdown{
+            display: block;
+            transition-duration: 4s;
+            transition-delay: 3s;
+            transition-timing-function: ease-in;
+        
+        }
+        .child>h1{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1> COURCES</h1>
+            <div class="dropdown">
+                <p> DSA/placement</p>
+                <p> GATE 2026 Prep</p>
+                <p> ML& Data sinces</p>
+                <p>Development</p>
+                <p> cloud/devOps</p>
+                <p> programming  language</p>
+                <p>All cources</p>
+            </div>
+        </div>
+        <div class="child">
+            <h1>TUTORIALS</h1>
+            <div class=" dropdown">
+                <p> python</p>
+                <p> java</p>
+                <p>DSA </p>
+                <p> ML/data sceince</p>
+                <p> interview corner</p>
+                <p> programming languages</p>
+                <p> Web development</p>
+                <p> GATE</p>
+                <p> CS subjects</p>
+                <p> Devops </p>
+                <p> school learning</p>
+                <p> software and tools</p>
+             </div>
+        </div> 
+        <div class="child">
+            <h1>practice</h1>
+            <div class="dropdown">
+                <p>practice coding problems</p>
+                <p> national skillup-free cources</p>
+                <p> problem of the day</p>
+            </div>
+        </div>
+        <div class="child">
+            <h1> jobs</h1>
+            <div class="dropdown">
+                <p>Apply now!</p>
+                <p> post jobs</p>
+                <p> jpb updates</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+</body>
+</html>
