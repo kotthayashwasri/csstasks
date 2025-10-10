@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <head>
+<style>
+        .parent{
+            width: 600px;
+            height: 400px;
+            background: linear-gradient(to right,#cd802e, #ffc371, #d8c1a6, #4d423f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+
+        .child{
+                background-color: orange;
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                z-index: 2;
+            }
+        .child2{
+                height: 120px;
+                width: 120px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: gold;
+                animation: eclispe 2s infinite linear alternate;
+                z-index: 1;
+
+            }
+        @keyframes eclispe{
+                0%{
+                    width: 100px;
+                    height: 100px;
+                    background-color: orange;
+                }
+                50%{
+                    left: 250px;
+                    bottom: 57%;
+                    background-color: yellow;
+                }
+                100%{
+                    width: 150px;
+                    height: 150px;
+                    background-color: gold;
+                }
+             }
+</style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child"></div>
+    <div class="child2"></div>
+</div>
+</body>
+</html>
