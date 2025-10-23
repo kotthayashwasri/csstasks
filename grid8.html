@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height:100vh;
+            display:grid;
+            gap:10px;
+        }
+        .parent>*{
+            background-color: blue;
+        }
+        .child1{
+            grid-template-columns: repeat(5,1fr);
+        }
+        .child8{
+            grid-column:3/6;
+        }
+        .child9{
+            grid-column:1/6;
+        }
+    </style>
+</head>
+<body>
+    <a href="./grid_home.html">Home</a>
+    <div class="parent">
+        <div class="child1">PARROT</div>
+        <div class="child2">PEACOCK</div>
+        <div class="child3">EAGLE</div>
+        <div class="child4">TIGER</div>
+        <div class="child5">LION</div>
+        <div class="child6">ELEPHANT</div>
+        <div class="child7">MONKEY</div>
+        <div class="child8">DEER</div>
+        <div class="child9">GIRAFFE</div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style> 
+     .parent{
+            display: grid;
+            height: 100vh;
+            gap:10px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .parent *{
+            background-color: lightcoral;
+        }
+        .child1{
+           grid-column: 1/3;
+           grid-row: 1fr 1fr 2fr 1fr;
+        }
+        .child6{
+            grid-column: 3/4;
+        }
+        .child7{
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .child8 {
+            grid-column: 3/4;
+        }
+        .child11{
+            grid-column: 1/5;
+        }
+
+     </style>
+</head>
+<body>
+    <a href="./grid_home.html">Home</a>
+    <div class="parent">
+        <div class="child1">CRIMSON SKY</div>
+        <div class="child2">SILENT STROM</div>
+        <div class="child3">BROKEN LIGHT</div>
+        <div class="child4">LOST TIME</div>
+        <div class="child5">HIDDEN TRUTH</div>
+        <div class="child6">DARK FLAME</div>
+        <div class="child7">FADING ECHO</div>
+        <div class="child8">BLUE MOON</div>
+        <div class="child9">LAST HOPE</div>
+        <div class="child10">ETERNAL DAWN</div>
+        <div class="child11">THE LOST KEY</div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height:100vh;
+           display: grid;
+           gap:20px;
+        
+        }
+        .parent>*{
+            background-color:powderblue;
+            
+        }
+        .child1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+                    }
+       .child2{
+            grid-row:2/4;
+       }
+       .child3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+       }
+    </style>
+</head>
+<body>
+    <a href="./grid_home.html">Home</a>
+    <div class="parent">
+        <div class="child1">PRINCE CHRAMING</div>
+        <div class="child2">CINDERLLA</div>
+        <div class="child3">BRUNO</div>
+        <div class="child4">DRIZELLA</div>
+        <div class="child5">ANASTASIA</div>
+
+    </div>
+
+
+    
+</body>
+</html>

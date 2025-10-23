@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .parent>*{
+            background-color: gold;
+        }
+        .child1{
+           grid-column: 1/3;
+        }
+
+        .child2{
+            grid-row: 1/3;
+            grid-column: 3/4;
+        }
+
+        
+    </style>
+</head>
+<body>
+     <a href="./grid_home.html">Home</a>
+    <div class="parent">
+        <div class="child1">pokiri</div>
+        <div class="child2">athadu</div>
+        <div class="child3">srimanthudu</div>
+        <div class="child4">khaleja</div>
+    </div>
+    
+</body>
+</html>

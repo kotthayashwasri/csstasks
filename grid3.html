@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 30px;
+           height: 100vh;
+      
+        }
+         .parent>*{
+            background-color: palevioletred;
+        }
+        .child1{
+            grid-column: 1/4;
+        }
+        .child3{
+            grid-column: 2/4;
+        }
+         .child4{
+            grid-column: 1/4;
+        }
+
+    </style>
+</head>
+<body>
+     <a href="./grid_home.html">Home</a>
+    <div class="parent">
+        <div class="child1">ARYA</div>
+        <div class="child2">PARUGU</div>
+        <div class="child3">PUSHPA</div>
+        <div class="child4">SARROINDU</div>
+    </div>
+    
+</body>
+</html>
