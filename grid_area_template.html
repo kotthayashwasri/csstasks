@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 100px;
+            background-color: black;
+        }
+        .parent{
+            display: grid;
+            height: 150px;
+            gap: 10px;
+            width: 50%;
+            grid-template-rows:repeat(13,100px) ; 
+            grid-template-areas: 
+            'img1 img1 img2 img3'
+            'img1 img1 img2 img4'
+            'img1 img1 img5 img6'
+            'img7 img8 img9 img9'
+            'img7 img10 img9 img9'
+            'img11 img12 img9 img9'
+            'img11 img13 img9 img9'
+            'img14 img14 img15 img16'
+            'img14 img14 img15 img17'
+            'img14 img14 img18 img19'
+            'img20 img20 img20 img21'
+            'img20 img20 img20 img22'
+            'img20 img20 img20 img23';
+        }
+        .parent>img{
+            height: 100%;
+            width: 100%;
+            border: 2px solid white;
+        }
+        .img1{
+            grid-area: img1;
+        }
+         .img2{
+            grid-area: img2;
+        } 
+        .img3{
+            grid-area: img3;
+        } 
+        .img4{
+            grid-area: img4;
+        }
+         .img5{
+            grid-area: img5;
+        } 
+        .img6{
+            grid-area: img6;
+        }
+         .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+         .img9{
+            grid-area: img9;
+        } 
+        .img10{
+            grid-area: img10;
+        }
+         .img11{
+            grid-area: img11;
+        }
+         .img12{
+            grid-area: img12;
+        } 
+        .img13{
+            grid-area: img13;
+        }
+         .img14{
+            grid-area: img14;
+        }
+         .img15{
+            grid-area: img15;
+        }
+         .img16{
+            grid-area:img16;
+        } 
+        .img17{
+            grid-area: img17;
+        } 
+        .img18{
+            grid-area: img18;
+        } 
+        .img19{
+            grid-area: img19;
+        } 
+        .img20{
+            grid-area: img20;
+        }
+         .img21{
+            grid-area: img21;
+        }
+         .img22{
+            grid-area: img22;
+        }
+        .img23{
+            grid-area: img23;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <img src="https://i.pinimg.com/474x/ec/a6/da/eca6da2e377514a38db858305a71a8d2.jpg" alt="" class="img1">
+    <img src="https://m.media-amazon.com/images/I/51M1pKcDpQL.jpg" alt="" class="img2">
+    <img src="https://freshknots.in/wp-content/uploads/2024/09/FreshKnots_BUnchOfLilies-3.jpg" alt="" class="img3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdlBY9F0GSt2s6qiaorllnbKVzn_apUFTrxw&s" alt="" class="img4">
+    <img src="https://i.pinimg.com/736x/c3/2c/2f/c32c2f4b8765a3aea1cf4f0cc210a9b4.jpg" alt="" class="img5">
+    <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:283,cw:1131,ch:1131,q:80,w:1131/jPQ8FnrEqFQBFRKzumt3Y6.jpg" alt="" class="img6">
+    <img src="https://img.lovepik.com/bg/20231226/blue-pansies-flowers-wallpaper_2490460_wh1200.png" alt="" class="img7">
+    <img src="https://westmountflorist.com/cdn/shop/articles/wf-flower-reference-guide-snapdragon.jpg?v=1761061378&width=2048" alt="" class="img8">
+    <img src="https://www.saharanpurnursery.in/cdn/shop/files/2_89b5cdb4-c2f3-4d63-bbe5-90bfd7c81474_700x700.jpg?v=1718611145" alt="" class="img9">
+    <img src="https://radhakrishnaagriculture.in/cdn/shop/files/marigoldincayellow.jpg?v=1710311706" alt="" class="img10">
+    <img src="https://ivyparadiseplant.com/wp-content/uploads/2023/11/6.jpg" alt="" class="img11">
+    <img src="https://www.shutterstock.com/image-photo/purple-flowers-italian-asters-michaelmas-260nw-787095415.jpg" alt="" class="img12">
+    <img src="https://i.pinimg.com/236x/44/f7/1f/44f71fdaeb1c427bf3c888254ff60737.jpg" alt="" class="img13">
+    <img src="https://m.media-amazon.com/images/I/51DXfYOmjPL._AC_UF1000,1000_QL80_.jpg" alt="" class="img14">
+    <img src="https://m.media-amazon.com/images/I/51PvAAOoKML._AC_UF1000,1000_QL80_.jpg" alt="" class="img15">
+    <img src="https://petalsinbloomfarm.com/cdn/shop/files/Tomo_wm2_1445x.png?v=1734106611" alt="" class="img16">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Strelitzia_larger.jpg/1200px-Strelitzia_larger.jpg" alt="" class="img17">
+    <img src="https://www.thespruce.com/thmb/WKYFEBpG2uCpLMBbcxtX-JNT_aA=/3800x0/filters:no_upscale():max_bytes(150000):strip_icc()/protea-plants-growing-guide-5205822-hero-6845458e7d1147f4bce1d66b192a25a8.jpg" alt="" class="img18">
+    <img src="https://www.easytogrowbulbs.com/cdn/shop/products/Calla_Gold_Rush.SHUt.SQ.jpg?v=1580946069&width=1946" alt="" class="img19">
+    <img src="https://w0.peakpx.com/wallpaper/532/916/HD-wallpaper-fuchsia-flowers-purple-bloom-flowers-plant.jpg" alt="" class="img20">
+    <img src="https://m.media-amazon.com/images/I/61I9kPeVt9L._AC_UF1000,1000_QL80_.jpg" alt="" class="img21">
+    <img src="https://www.gardenstylesanantonio.com/wp-content/uploads/2020/04/bougainvillea-bougainvillea-sp-flowers.jpg" alt="" class="img22">
+    <img src="https://www.organicindiaseeds.com/cdn/shop/files/f876fe99be1d48f911ddf1220bdfa5e5.jpg?v=1741589332&width=750" alt="" class="img23">
+   </div>
+</body>
+</html>
