@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <style>
+        .main{
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            background-image: linear-gradient(to right, #4b0082, #ff00cc);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index:1
+        }
+        .active{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap:20px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .page1{
+            position: relative;
+            background-image: url("https://wallpapers.com/images/hd/smile-and-play-prabhas-mirchi-qq6py6qqttypo2ha.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .page1 h1{
+            position: absolute;
+            top:200px;
+            left: 500px;
+            color:white;
+        }
+        .page1 p{
+            position: absolute;
+            top:250px;
+            left:450px;
+            line-height: 1.3em;
+            color: white;
+            padding-top: 2px;
+        }
+        .page1 button{
+            position: absolute;
+            top:300px;
+            left:630px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .page1:hover button{
+            background-color: violet;
+            color: white;
+            transform: scale(1.1);
+        }
+        .card{
+          background-color: black; 
+          color: white;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 30px pink;
+            transform: scale(1.1);
+            background-image: linear-gradient(violet rgb(175, 34, 109));
+            color:white
+        }
+        .card h5{
+            color: burlywood;
+        }
+        .page3 {
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           flex-wrap: wrap;
+           background-image: linear-gradient(to right, violet orange);
+           padding: 40px;
+           margin-top: 20px;
+           border-radius: 15px;
+          }
+          .page3 button {
+            background-image: linear-gradient(to right, rgb(253, 154, 154),#ff5f9e, #ff00cc);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 14px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.4s linear;
+            transform: scale(1);
+          }
+          .page3 button:hover {
+              background-image: linear-gradient(to right,rgb(234, 234, 9) #ff5f9e, );
+              transform: scale(1.15);
+          }
+         .f1{
+            background-color:deeppink;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .both{
+            background-color: paleturquoise;
+          }
+      </style>
+</head>
+<body>
+    <nav class="main">
+        <h3>HOTSTAR🎬📽️💫</h3>
+            <ul class="active">
+                <li class="nav"><a href="#Home">Home</a></li>
+                <li class="nav"><a href="#Movies">Movies</a></li>
+                <li class="nav"><a href="#Shows">Shows</a></li>
+                <li class="nav"><a href="#Sports">Sports</a></li>
+                <li class="nav"><a href="#Log in">Log in</a></li>
+            </ul>
+    </nav>
+
+    <section class="page1">
+        <h1>Unlimited Entertainment</h1>
+        <p><b>Watch your favourite shows,movies,and livesports anytime,anywhere.</b></p>
+        <button>Explore Now</button>
+    </section>
+
+    <div class="both">
+      <h3 class="pt-4 text-light">Trending Movies🔥</h3>
+      <section class="d-flex flex-row justify-content-between pt-3 ">
+        <div class="card h-25 text-center" style="width: 18rem;">
+          <img src="https://www.insideboxoffice.com/wp-content/uploads/2024/08/baahubali-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+           <h5 class="card-title">BAHUBALI-2</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+    <div class="card h-25" style="width: 18rem;">
+      <img src="https://sund-images.sunnxt.com/27774/1920x1080_bda889cb-0a68-4620-8cc1-2a3c4a2eb589.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">DARLING</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card h-25" style="width: 18rem;">
+      <img src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/2085/1740478132085-i" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MR PERFECT</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card h-25" style="width: 18rem;">
+     <img src="https://i.ytimg.com/vi/k_-PvLgr1c0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC56-deBXcO_OQqdC-OXKP717OM3w" class="card-img-top" alt="...">
+     <div class="card-body">
+        <h5 class="card-title">GODAVRI</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    </section>
+
+    <h3 class="text-light">Popular Categories🎗️</h3>
+    <section class="page3">
+      <button>Action</button>
+      <button>Comedy</button>
+      <button>Crime</button>
+      <button>Horror</button>
+    </section>
+    </div>
+
+    <footer class="f1">
+     <p>&copy; 2025 Hotstar Clone | Created by k.yashwasri</p>
+    </footer>
+</body>
+</html>
